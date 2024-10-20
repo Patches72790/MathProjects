@@ -12,4 +12,8 @@ pkgs.mkShell {
       python-pkgs.jupyterlab
     ]))
   ];
+
+  shellHook = ''
+    alias pip="pip3"
+  '';
 }
